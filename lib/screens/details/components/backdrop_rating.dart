@@ -7,8 +7,8 @@ import '../../../constants.dart';
 class BackdropAndRating extends StatelessWidget {
   const BackdropAndRating({
     Key key,
-    @required this.size,
-    @required this.movie,
+    required this.size,
+    required this.movie,
   }) : super(key: key);
 
   final Size size;
@@ -63,7 +63,7 @@ class BackdropAndRating extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SvgPicture.asset("assets/icons/star_fill.svg"),
-                        SizedBox(height: kDefaultPadding / 4),
+                        SizedBox(height: AppConstants.defaultPadding / 4),
                         RichText(
                           text: TextSpan(
                             style: TextStyle(color: Colors.black),
@@ -76,7 +76,7 @@ class BackdropAndRating extends StatelessWidget {
                               TextSpan(text: "10\n"),
                               TextSpan(
                                 text: "150,212",
-                                style: TextStyle(color: kTextLightColor),
+                                style: TextStyle(color: AppConstants.textLightColor),
                               ),
                             ],
                           ),
@@ -88,7 +88,7 @@ class BackdropAndRating extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SvgPicture.asset("assets/icons/star.svg"),
-                        SizedBox(height: kDefaultPadding / 4),
+                        SizedBox(height: AppConstants.defaultPadding / 4),
                         Text("Rate This",
                             style: Theme.of(context).textTheme.bodyText2),
                       ],
@@ -112,7 +112,7 @@ class BackdropAndRating extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: kDefaultPadding / 4),
+                        SizedBox(height: AppConstants.defaultPadding / 4),
                         Text(
                           "Metascore",
                           style: TextStyle(
@@ -120,7 +120,7 @@ class BackdropAndRating extends StatelessWidget {
                         ),
                         Text(
                           "62 critic reviews",
-                          style: TextStyle(color: kTextLightColor),
+                          style: TextStyle(color: AppConstants.textLightColor),
                         )
                       ],
                     )
