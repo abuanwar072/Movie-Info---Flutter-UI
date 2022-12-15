@@ -12,8 +12,8 @@ class GenreCard extends StatelessWidget {
       alignment: Alignment.center,
       margin: EdgeInsets.only(left: kDefaultPadding),
       padding: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding,
-        vertical: kDefaultPadding / 4, // 5 padding top and bottom
+        horizontal:AppConstants.defaultPadding,
+        vertical: AppConstants.defaultPadding / 4, // 5 padding top and bottom
       ),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.black26),
@@ -21,7 +21,7 @@ class GenreCard extends StatelessWidget {
       ),
       child: Text(
         genre,
-        style: TextStyle(color: kTextColor.withOpacity(0.8), fontSize: 16),
+        style: TextStyle(color: AppConstants.textColor.withOpacity(0.8), fontSize: 16,),
       ),
     );
   }
